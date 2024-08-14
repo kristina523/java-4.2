@@ -1,0 +1,19 @@
+<resources>
+    <!-- Стиль для кнопок -->
+    <style name="GameButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:background">@color/button_background_color</item>
+    </style>
+
+    <!-- Стиль для TextView -->
+    <style name="TextStyle">
+        <item name="android:textColor">@color/status_text_color</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

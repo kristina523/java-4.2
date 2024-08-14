@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:columnCount="3"
+            android:rowCount="3">
+
+            <!-- Buttons for Tic Tac Toe -->
+            <Button
+                android:id="@+id/button1"
+                style="@style/GameButton" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/GameButton" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/GameButton" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/GameButton" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/GameButton" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/GameButton" />
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/GameButton" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/GameButton" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/GameButton" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gridLayout"
+            android:layout_centerHorizontal="true"
+            android:text="Player X's turn"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/scoreX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:padding="8dp"
+            android:text="X: 0" />
+
+        <TextView
+            android:id="@+id/scoreO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:padding="8dp"
+            android:text="O: 0" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
